@@ -27,22 +27,22 @@ Setting Up Your Page
 
 	The code is going to look for a div tag in your page, you will need to give the tag a unique ID and then use that ID when initializing the streamer in your JavaScript. It’s important to note that the actual streamer is transparent so if you want to set it up in a container with a white background and some decent padding etc I would use the following code:
 	
-[code]
+<pre>
 <div class="center-block" style="padding: 20px; border: 1px #eaeaea solid;width:1200px !important;background-color:#FFF;"   >
 			<div id="json-events"></div>
-    </div>
-[/code]
+</div>
+</pre>
 
 	The class center-block is a Bootstrap class above and I wanted to force the 1200 pixel width. Notice for the example my div ID  is equal to ‘json-events’. Next, you need to initialize the streamer using the following code that should be in the document ready function placed at the bottom of your page in script tags.
 
-[javascript]
+
 $( document ).ready(function() {
 	$.custom.streamer({
 		dataUrl 		: ' events.json',
 		containerId 	: 'json-events'
 	});
 });
-[/javascript]
+
 	
 	The example above assumes that the json file that will supply the events lives on the root of the drive, and the div id that will host the events streamer has an ID of ‘json-events’. 
 	
@@ -81,15 +81,4 @@ description		= Optional description leave an empty string if not needed,
 
 presenter     		= Presenter name
 
-
-
-Removing the little x in IE-10 across all your input fields
-
-	I am just finishing up a week of headaches directly attributed to Microsoft’s crazy implementation of a browser that allows for around 35 different ways that a user can render your site. One of the smaller issues had to do with the little black x that appears in IE-10, apparently the combo boxes in Extjs are actually input type text and the addition of an unintended way to clear the combo could potentially introduce several errors, such as values being set as an empty string when you are not expecting that to be the case. Fortunately the x can be hidden using simple CSS:
-
-[css]
-input::-ms-clear {
-    display: none;
-}
-[/css]
 
