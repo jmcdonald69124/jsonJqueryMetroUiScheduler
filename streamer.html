@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test Streamer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/streamer.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center-block" style="padding: 20px; border: 1px #eaeaea solid;width:1200px !important;background-color:#FFF;"   >
+        <div id="json-events"></div>
+    </div>
+</body>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.widget.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/json-event-streamer.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $.custom.streamer({
+                dataUrl 		: 'js/events.json',
+                containerId 	: 'json-events'
+            });
+        });
+    </script>
+</html>

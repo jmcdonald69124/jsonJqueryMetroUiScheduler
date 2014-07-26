@@ -1,0 +1,109 @@
+{
+    "eventHeader"     : "Your event header here",
+    "eventStartTime"  : "9:00",
+    "eventEndTime"    : "17:00",
+    "blockLengthMins" : "30",
+    "keynotes":[
+        {
+            "startTime"     : "9:00",
+            "endTime"       : "9:30",
+            "title"         : "Registration",
+            "description"   : "",
+            "presenter"     : "Test"
+        },
+        {
+            "startTime"     : "9:30",
+            "endTime"       : "10:00",
+            "title"         : "Opening Ceremony / Administrative Remarks",
+            "description"   : "",
+            "presenter"     : "Test"
+        }
+    ],
+    "tracks":[
+        {
+            "title"      : "Test",
+            "location"   : "Conference Room",
+            "blockColor" : "orange",
+            "sessions" : [
+                {
+                    "startTime"     : "10:30",
+                    "endTime"       : "11:00",
+                    "title"         : "Testing Block 1",
+                    "description"   : "Just a testing block",
+                    "presenter"     : "Mrs. Test"
+                },
+                {
+                    "startTime"     : "12:30",
+                    "endTime"       : "13:00",
+                    "title"         : "Testing Block 2",
+                    "description"   : "Just a testing block",
+                    "presenter"     : "Mrs. Test"
+                },
+                {
+                    "startTime"     : "11:30",
+                    "endTime"       : "12:00",
+                    "title"         : "Testing Block 3",
+                    "description"   : "Just a testing block",
+                    "presenter"     : "Mrs. Test"
+                }
+            ]
+        },
+        {
+            "title"      : "Test 2",
+            "location"   : "Conference Room 2",
+            "blockColor" : "blue",
+            "sessions" : [
+                {
+                    "startTime"     : "9:40",
+                    "endTime"       : "10:10",
+                    "title"         : "Testing Block 2",
+                    "description"   : "Just a testing block 2",
+                    "presenter"     : "Mr. Test"
+                }
+            ]
+        },
+        {
+            "title"      : "Test 3",
+            "location"   : "Conference Room 3",
+            "blockColor" : "green",
+            "sessions" : [
+                {
+                    "startTime"     : "9:40",
+                    "endTime"       : "10:10",
+                    "title"         : "Testing Block 3",
+                    "description"   : "Just a testing block 3",
+                    "presenter"     : "Mr. Test"
+                }
+            ]
+        },
+        {
+            "title"      : "Test 4",
+            "location"   : "Conference Room 4",
+            "blockColor" : "indigo",
+            "sessions" : [
+                {
+                    "startTime"     : "9:40",
+                    "endTime"       : "10:10",
+                    "title"         : "Testing Block 4",
+                    "description"   : "Just a testing block 4",
+                    "presenter"     : "Mr. Test"
+                }
+            ]
+        },
+        {
+            "title"      : "Test 5",
+            "location"   : "Conference Room 5",
+            "blockColor" : "magenta",
+            "sessions" : [
+                {
+                    "startTime"     : "9:40",
+                    "endTime"       : "10:10",
+                    "title"         : "Testing Block 5",
+                    "description"   : "Just a testing block 5",
+                    "presenter"     : "Mr. Test"
+                }
+            ]
+        }
+    ]
+
+}
